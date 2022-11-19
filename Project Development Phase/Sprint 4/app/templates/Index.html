@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <title>Mobile Menu</title>
+        <link rel="stylesheet" href="Styles.css">
+        <link rel="stylesheet" href="Sign up_ Style.css">
+        <link rel="stylesheet" href="aos.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet"> 
+        <style>
+           body{
+            
+	        opacity: 0;
+	        transition: opacity 1s;
+            background: url(images/bgrnd.jpg);
+            font-family:  sans-serif;
+            font-size: 10px;font-weight: 300; line-height: 1.5em;background-size:cover; 
+            background-repeat: no-repeat; font-weight: bold;
+            }
+            
+           .inner_main_menu {margin: 0 auto; width: 1300px;}    
+            .inner_main_menu ul{margin: 0; padding: 80px 150px 150px; list-style: none;text-align: right;}    
+            .inner_main_menu ul li{float: none; display: inline-block;position: relative}    
+            .inner_main_menu ul li:nth-child(1){float: center;}    
+            .inner_main_menu ul li:nth-child(2){float: center;}    
+            .inner_main_menu ul li:nth-child(3){float: center;}
+            .inner_main_menu ul li:nth-child(4){float: center;}
+            .inner_main_menu ul li:nth-child(5){float: center;}
+            .inner_main_menu ul li:nth-child(6){float: center;}
+            .inner_main_menu ul li:nth-child(7){float: right;}    
+            .inner_main_menu ul li a{color: rgba(243, 249, 250, 0.925); font-size: 33px; text-decoration: none; display: block;padding: 20px 20px;text-align: left;}    
+            .inner_main_menu ul li a:hover{color:rgba(255, 127, 22, 0.952))}  
+            .inner_main_menu ul li ul{position: absolute; top: 40px; left: -9999999px; width: 200px;background: #262626; padding: 0;}  
+            .inner_main_menu ul li:hover ul{left: 0px;}   
+            .inner_main_menu ul li ul li{float: left;width: 100%;text-align: left;}  
+            .inner_main_menu ul li ul li a{color: #fff;text-transform: capitalize; font-size: 15px;}  
+            .inner_main_menu ul li ul li a:hover{background: rgb(21, 20, 20); color: rgba(59, 212, 223, 0.925);}  
+            .inner_main_menu ul li ul li ul{top: 0; left: -999999px;}  
+            .inner_main_menu ul li:hover ul li ul{top: 0; left: -999999px;}  
+            .inner_main_menu ul li ul li:hover ul{top: 0; left: 200px;}  
+            .inner_main_menu ul li:hover a{color: rgba(59, 212, 223, 0.925)}  
+            .inner_main_menu ul li:hover ul li a{color: #ffffff}  
+            .inner_main_menu ul li ul li a:hover{color: rgba(59, 212, 223, 0.925)}  
+            .inner_main_menu ul li ul li:hover a{background: #ddd; color: rgba(59, 212, 223, 0.925);}  
+            .inner_main_menu ul li ul li:hover ul li a{background: rgba(0,0,0,0.6); color: #fff;}  
+            .inner_main_menu ul li ul li ul li a:hover{background: #ddd; color: #262626;}  
+            .slicknav_menu {
+              background: rgba(59, 212, 223, 0.925) none repeat scroll 0 0;
+              font-size: 20px;
+              padding: 5px;
+              display: none;    
+              position: fixed;
+              right: 0;
+              width: 100%;
+              z-index: 99999;
+            }
+            ul.slicknav_nav {
+              background: rgba(59, 212, 223, 0.925) none repeat scroll 0 0;
+              left: 0;
+              position: absolute;
+              top: 0;
+              width: 80%;
+            }
+            .slicknav_btn {top: 35px;}
+            #main_menu{width: 100%; position: relative;}
+            .logo_area{width: 300px; height: 300px; position: absolute; left: 50%; top: 0; content: ""; margin-left:-150px; text-align: center; }
+            @media only screen and (min-width: 200px) and (max-width: 767px) { 
+                .slicknav_menu{display: block;}
+                .inner_main_menu{display: none;}
+                .logo_area {height: auto;left: 0;margin-left: 0;position: relative;top: 0;width: 130px;}
+                .logo_area img{height: auto;width: 100%;}
+                
+
+
+
+
+
+
+                
+
+
+            }
+        </style>
+    </head>
+    <body onload="document.body.style.opacity='1'">
+        
+        
+        <div id="main_menu">
+          <!----  <div class="logo_area">
+                <a href=""><img src="logo.png" alt=""></a>
+            </div>
+
+            -->
+            <div class="inner_main_menu">
+                <ul id="menu">
+                    <li class="button"><a href="">HOME</a></li>
+                    <li class="button"><a href="">ABOUT</a></li>
+                    <li class="button"><a href="">PAY</a>
+                        <ul>
+                            <li><a href="">MONEY TRANSFER</a>
+                                <ul>
+                                    <li><a href="">UPI(Instant Money Transfer)</a></li>
+                                    <li><a href="">IMPS (Immediate payment 24*7)</a></li>
+                                    <li><a href="">RTGS (Available 24*7)</a></li>
+                                    <li><a href="">NEFT (Available 24*7)</a></li>
+                                    <li><a href="">REMIT NOW (Foreign outword Remittance)</a></li>
+                                    <li><a href="">VISA CARD PAY</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="">CARDS</a>
+                                <ul>
+                                    <li><a href="">CREDIT CARD</a></li>
+                                    <li><a href="">DEBIT CARD</a></li>
+                                    <li><a href="">COMMERCIAL CARD</a></li>
+                                    <li><a href="">BUSINESS CARD</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="">BILL PAYMENT</a>
+                                <ul>
+                                    <li><a href="">ELECTRICITY BILL PAYMENT</a></li>
+                                    <li><a href="">GAS</a></li>
+                                    <li><a href="">RENT PAYMENT</a></li>
+                                    <li><a href="">BANK CREDIT CARD BILL</a></li>
+                                    <li><a href="">MOBILE POSTPAID</a></li>
+                                    <li><a href="">WATER</a></li>
+                                    
+                                </ul>
+                            </li>
+
+                            <li><a href="">RECHARGE</a>
+                                <ul>
+                                    <li><a href="">BROADBAND & DATA CARD</a></li>
+                                    <li><a href="">MOBILE PREPAID RECHARGE</a></li>
+                                    <li><a href="">DTH RECHARGE</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="">PAYMENT SOLUTION</a>
+                                <ul>
+                                    <li><a href="">RAZORPAY</a></li>
+                                    <li><a href="">FASTAG-TOLL PAYMENT</a></li>
+                                    <li><a href="">MY CARDS</a></li>
+                                    <li><a href="">CASH,CHEQUE DEMAND DRAFT</a></li>
+                                    <li><a href="">LOAN REPAYMENT</a></li>
+                                    <li><a href="">TAXES</a></li>
+                                    <li><a href="">EDUCATION FEES</a></li>
+                                    <li><a href="">DONATION</a></li>
+                                    <li><a href="">STAY SECURE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="button"><a href="">SAVE</a>
+                        <ul>
+                            <li><a href="">ACCOUNTS</a>
+                                <ul>
+                                    <li><a href="">SAVING ACCOUNTS</a></li>
+                                    <li><a href="">SALARY ACCOUNTS</a></li>
+                                    <li><a href="">CURRENT ACCOUNTS</a></li>
+                                    <li><a href="">RURAL ACCOUNTS</a></li>
+                                    <li><a href="">SUKANYA SAMRIDHI ACCOUNTS</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="">DEPOSITS</a>
+                                <Ul>
+                                    <li><a href="">FIXED DEPOSIT</a></li>
+                                    <li><a href="">NON-WITHDRAWAL DEPOSITS</a></li>
+                                    <li><a href="">RECURRING DEPOSIT</a></li>
+    
+                                </Ul>
+                            </li>
+
+                            <li><a href="">SAFE DEPOSIT LOCKER</a>
+                                <ul>
+                                    <li><a href="">MY PASSION FUND</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a href="">HIGH NETWORTH BANKING</a>
+                                <ul>
+                                    <li><a href="">WEALTH</a></li>
+                                    <li><a href="">IMPERIA</a></li>
+                                    <li><a href="">PREFERRED</a></li>
+                                    <li><a href="">CLASSIC</a></li>
+                                    <li><a href="">PRIME</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="button"><a href="">CONTACT</a></li>
+                    
+                    <li class="sigh">
+
+                      <!----  <link rel="stylesheet" href="F:/Source nah/style.css">  -->
+                        
+                        <a href="Sigh up.html">Sign up</a>
+                        
+                    </li>
+                </ul>
+                
+                
+            
+            </div>
+
+            
+        </div>
+
+        <div class="h1" >
+            <h1>AI  Based  Discourse</h1>
+            <h2>For  Banking</h2>
+            <h3>Industry</h3>
+        </div>
+
+        <div class="icon">
+            
+            <style>
+                .material-symbols-outlined {
+                  font-variation-settings:
+                  'FILL' 0,
+                  'wght' 400,
+                  'GRAD' 0,
+                  'opsz' 48,
+                }
+            </style>
+        </div>
+       
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#menu').slicknav();
+
+        });
+    </script>
+    <script src="bot.js"></script>
+   </body>
+</html>
